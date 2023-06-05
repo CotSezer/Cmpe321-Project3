@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/manager/add-director" method="POST" autocomplete="off">
+        <label for="username">Director Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="password">Director Password:</label><br>
+        <input type="text" name="password" required><br>
+        <label for="name">Director Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label for="surname">Director Surname:</label><br>
+        <input type="text" name="surname" required><br>
+        <label for="surname">Director Nation:</label><br>
+        <input type="text" name="nation" required><br>
+        <label for="platform_id">Platform ID:</label><br>
+        <input type="text" name="platform_id" required ><br>
+        <button type="submit">Add Director</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-left: auto; /* Center the table horizontally */
+    margin-right: auto; /* Center the table horizontally */
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #e9e9e9;
+  }
+  
+  table td:first-child {
+    font-weight: bold;
+  }
+  

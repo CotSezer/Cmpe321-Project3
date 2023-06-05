@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+
+<body>
+    <% if(movies.length == 0){ %>
+        <body>Movie not found!</body>
+    <% } else { %>  
+        <table>
+            <tr>
+            <th>Movie ID</th>
+            <th>Movie Name</th>
+            <th>Director's Surname</th>
+            <th>Platform</th>
+            <th>Theatre Id</th>
+            <th>Time Slot</th>
+            <th>Predecessor List</th>
+            </tr>
+            <% for (var i = 0; i < movies.length; i++) { %>
+                <tr>
+                    <td><%= movies[i].movie_id %></td>
+                    <td><%= movies[i].movie_name %></td>
+                    <td><%= movies[i].surname %></td>
+                    <td><%= movies[i].platform %></td>
+                    <td><%= movies[i].theatre_id %></td>
+                    <td><%= movies[i].time_slot %></td>
+                    <td><%= movies[i].predecessors_list %></td>
+                </tr>
+            <% } %>
+        </table>
+    <% } %>
+</body>
+</html>

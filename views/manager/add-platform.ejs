@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/manager/add-platform" method="POST" autocomplete="off">
+        <label for="platform_id">Platform ID:</label><br>
+        <input type="text" name="platform_id" required><br>
+        <label for="platform_name">Platform Name:</label><br>
+        <input type="text" name="platform_name" required><br>
+        <button type="submit">Add Platform</button>
+    </form>
+</body>
+</html>

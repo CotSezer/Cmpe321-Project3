@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+
+<body>
+    <body>
+        <% if(movies.length == 0){ %>
+            <body>Movie not found!</body>
+        <% } else { %>  
+            <table>
+                <tr>
+                <th>Movie ID</th>
+                <th>Movie Name</th>
+                <th>Theatre ID</th>
+                <th>Theatre District</th>
+                <th>Time Slot</th>
+                </tr>
+                <% for (var i = 0; i < movies.length; i++) { %>
+                    <tr>
+                        <td><%= movies[i].movie_id %></td>
+                        <td><%= movies[i].movie_name %></td>
+                        <td><%= movies[i].theatre_id %></td>
+                        <td><%= movies[i].theatre_district %></td>
+                        <td><%= movies[i].slot %></td>
+                    </tr>
+                <% } %>
+            </table>
+        <% } %>
+    </body>
+    </html>

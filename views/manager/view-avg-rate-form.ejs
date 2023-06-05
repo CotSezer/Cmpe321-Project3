@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+  <form action="/manager/view-avg-rate" method="POST" autocomplete="off">
+    <label for="movie_id">Movie ID:</label><br>
+    <input type="text" name="movie_id" required><br>
+    <button type="submit">View Average Rate</button>
+  </form>
+</body>
+</html>

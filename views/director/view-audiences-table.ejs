@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+
+<body> 
+    <% if(audiences.length == 0){ %>
+        <body>No audiences in this session.</body>
+    <% } else { %>  
+        <table>
+            <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Surname</th>
+            </tr>
+            <% for (var i = 0; i < audiences.length; i++) { %>
+                <tr>
+                    <td><%= audiences[i].username %></td>
+                    <td><%= audiences[i].name %></td>
+                    <td><%= audiences[i].surname %></td>
+                </tr>
+            <% } %>
+        </table>
+    <% } %>
+</body>
+</html>

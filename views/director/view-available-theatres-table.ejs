@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+
+<body> 
+    <% if(theatres.length == 0){ %>
+        <body>No available theatres!</body>
+    <% } else { %>  
+        <table>
+            <tr>
+            <th>Theatre ID</th>
+            <th>District</th>
+            <th>Capacity</th>
+            </tr>
+            <% for (var i = 0; i < theatres.length; i++) { %>
+                <tr>
+                    <td><%= theatres[i].theatre_id %></td>
+                    <td><%= theatres[i].theatre_district %></td>
+                    <td><%= theatres[i].theatre_capacity%></td>
+                </tr>
+            <% } %>
+        </table>
+    <% } %>
+</body>
+</html>

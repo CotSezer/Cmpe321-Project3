@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/director/add-predecessor" method="POST" autocomplete="off">
+        <label for="predecessor">Predecessor Movie ID:</label><br>
+        <input type="text" name="predecessor" required><br>
+        <label for="successor">Successor Movie ID:</label><br>
+        <input type="text" name="successor" required><br>
+        <button type="submit">Add Predecessor</button>
+    </form>
+</body>
+</html>

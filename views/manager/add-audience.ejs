@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/manager/add-audience" method="POST" autocomplete="off">
+        <label for="username">Audience Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="password">Audience Password:</label><br>
+        <input type="text" name="password" required><br>
+        <label for="name">Audience Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label for="surname">Audience Surname:</label><br>
+        <input type="text" name="surname" required><br>
+        <button type="submit">Add audience</button>
+    </form>
+</body>
+</html>

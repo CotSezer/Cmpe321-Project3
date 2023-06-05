@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+          <th>Movie ID</th>
+          <th>Movie Name</th>
+          <th>Rate</th>
+        </tr>
+        <% for (var i = 0; i < rates.length; i++) { %>
+            <tr>
+                <td><%= rates[i].movie_id %></td>
+                <td><%= rates[i].movie_name %></td>
+                <td><%= rates[i].rating %></td>
+            </tr>
+        <% } %>
+      </table>
+</body>
+</html>

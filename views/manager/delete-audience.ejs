@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/manager/delete-audience" method="POST" autocomplete="off">
+        <label for="username">Audience username:</label><br>
+        <input type="text" name="username" required><br>
+        <button type="submit">Delete Audience</button>
+    </form>
+</body>
+</html>

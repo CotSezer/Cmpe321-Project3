@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/director/add-session" method="POST" autocomplete="off">
+        <label for="id">movie ID:</label><br>
+        <input type="text" name="id" required><br>
+        <label for="theatre_id">Theatre ID:</label><br>
+        <input type="text" name="theatre_id" required><br>
+        <label for="slot">Time Slot:</label><br>
+        <input type="number" name="slot" required><br>
+        <label for="date">Date:</label><br>
+        <input type="text" name="date" required><br>
+        <button type="submit">Add session</button>
+    </form>
+</body>
+</html>

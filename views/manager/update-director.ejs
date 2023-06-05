@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+</head>
+
+<body>
+    <form action="/manager/update-director" method="POST" autocomplete="off">
+        <label for="username">Director's Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="platform">Director's New Platform ID: </label><br>
+        <input type="text" name="platform" required><br>
+        <button type="submit">Update Director's Platform</button>
+    </form>
+</body>
+</html>

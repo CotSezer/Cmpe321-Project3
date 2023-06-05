@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); -%>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+
+<body> 
+    <table>
+        <tr>
+          <th>Movie ID</th>
+          <th>Movie Name</th>
+          <th>Session ID</th>
+          <th>Rating</th>
+          <th>Overall Rating</th>
+        </tr>
+        <% for (var i = 0; i < tickets.length; i++) { %>
+        <tr>
+          <td><%= tickets[i].movie_id %></td>
+          <td><%= tickets[i].movie_name %></td>
+          <td><%= tickets[i].session_id %></td>
+          <td><%= tickets[i].rating %></td>
+          <td><%= tickets[i].average_rating %></td>
+        </tr>
+        <% } %>
+      </table>
+      
+</body>
+</html>
